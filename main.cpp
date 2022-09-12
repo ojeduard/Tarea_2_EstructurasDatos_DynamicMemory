@@ -44,16 +44,17 @@ int main(){
     cout << endl;
 
     cout << "La cantidad de elementos almacenados es: " << vec.Cantidad() << endl;
+    //Probando la sobrecarga de operadores
     if (vec.ValueAt(1) != -1000)
-        cout << vec.ValueAt(1) << endl;
+        cout << vec[1] << endl;
     if (vec.ValueAt(2) != -1000)
-        cout << vec.ValueAt(2) << endl;
-    if (vec.ValueAt(3) != -1000)
+        cout << vec[2] << endl;
+    if (vec[3] != -1000)
         cout << vec.ValueAt(3) << endl;
-    if (vec.ValueAt(4) != -1000)
+    if (vec[4]!= -1000)
         cout << vec.ValueAt(4) << endl;
 
-    cout << "Sobrecarga " << vec.ValueAt();
+//    cout << "Sobrecarga " << vec[1];
 
     cout << endl;
     VectorInt vec2(vec);

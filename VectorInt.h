@@ -26,8 +26,7 @@ public:
     void ChangeValueAt(unsigned int, int);
 
     unsigned int Cantidad() const;
-    // Retorna siempre el que este en la posicion 1 del vector (llenandose de la ultima a la primera)
-    int ValueAt (){return inicio[((conteo_max-1)-conteo)+1];}
+    int operator [] (int x){return ValueAt(x);}
     std::string imprimir();
 };
 
